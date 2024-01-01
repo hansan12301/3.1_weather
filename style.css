@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;400;700&display=swap');
+@keyframes move {
+  0% {
+    transform: translate(-50vw, -20vh);
+  }
+  25%{
+      transform: translate(-20vw, -10vh);
+  }
+  50% {
+    transform: translate(25vw, -5vh);
+  }
+  70% {
+    transform: translate(70vw, -10vh);
+  }
+  100% {
+    transform: translate(100vw, -20vh);
+  }
+}
+
+
+html, body  {margin: 0; width: 100%;
+            background: black;
+            font-family: 'IBM Plex Sans KR', sans-serif; line-height: 170%;
+            }
+body        {overflow-x: hidden;
+            }
+
+#container  {width: 100%;
+            overflow-y: scroll; overflow-x: hidden;
+            }
+#nothing    {height: 80vh;
+            }
+#halo       {width: 35%; margin-top: -15%;
+            animation-name: move;
+            animation-duration: 8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            }
+
+
+
+section     {width: 100vw; margin-top: 80vh; margin-bottom: 100vh;
+            }
+header      {position: fixed;  width: 100%;
+            }
+main        {position: relative; width: 100%;
+            }
+
+.hidden     {opacity: 0;
+            }
+.none       {display: none;
+            }
+.gradation  {background: linear-gradient(to top, gray, black);
+            }
+.headerText {top: 10%;
+            text-align: center;
+            color: white;
+            }
+.starting   {color: white; text-align: center;
+            }
+.yearly     {text-align: left;
+            }
+.cloud      {opacity: 0.2;
+            animation-name: move;
+            animation-duration: 8s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            }
+.walk       {position: absolute; display: block; margin-top: 250px;  margin-left: 3%; width: 40vh;
+            }
+.walkWith   {position: absolute; display: block; margin-top: 250px;  margin-left: 3%; width: 40vh;
+            }
+.article1   {position: relative;
+            box-sizing: content-box; width: max-content; margin-left: 30%; padding: 0.1em 1.5em;
+            color: black; background-color: rgba(255, 255, 255, 0.9);
+            }
+.article2   {position: relative; box-sizing: content-box; width: max-content; margin-left: 45%; padding: 0.1em 1.5em;
+            color: black; background-color: rgba(255, 255, 255, 0.9);
+            }
+.article3   {position: relative; box-sizing: content-box; width: max-content; margin-left: 40%; padding: 0.1em 1.5em;
+            color: black; background-color: rgba(255, 255, 255, 0.9);
+            }
+.article4   {position: relative; box-sizing: content-box; width: max-content; margin-left: 35%; padding: 0.1em 1.5em;
+            color: black; background-color: rgba(255, 255, 255, 0.9);
+            }
+.art        {position: absolute; height: 300px; width: 300px; top: 20px;
+            z-index: 1; object-fit: scale-down; filter: drop-shadow(-5px 5px 5px rgb(0, 0, 0, 0.5));
+            opacity: 0; transition: opacity 0.5s ease-in-out;
+            }
+.hover      {position: absolute; top: 30%; right: -30px; display: flex; justify-content: center; align-items: flex-start;
+            color: white;
+            }
+.hover:hover .art {
+  opacity: 1;
+}
+
+h1          {font-weight: 700; font-size: 300%;
+            }
+h2          {font-weight: 200; font-size: x-large;
+            }
+h5          {font-weight: 400; font-size: medium; line-height: 100%;
+            }
+p           {font-weight: 400; font-size: medium;
+            }
+strong      {font-weight: 700; font-size: x-large; line-height: 200%;
+            }
+span        {font-weight: 700; font-size: x-large; margin-left: 10%;
+            }
